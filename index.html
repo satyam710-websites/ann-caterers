@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>अन्न · Ann Caterers — Pure Veg Catering in Haridwar</title>
+  <meta name="description" content="अन्न (Ann) — pure vegetarian & sattvik catering in Haridwar for weddings, bhandaras, religious functions, corporate events and parties. Build your menu online and enquire on WhatsApp.">
+  <meta name="theme-color" content="#7a1f1f">
+  <meta property="og:title" content="अन्न · Ann Caterers, Haridwar">
+  <meta property="og:description" content="Pure veg & sattvik catering in Haridwar. Weddings, bhandaras, pujas, corporate events.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mukta:wght@300;400;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Ann home">
+    <span class="brand-mark">अन्न</span>
+    <span class="brand-sub" data-hi="केटरर्स · हरिद्वार">Caterers · Haridwar</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about" data-hi="परिचय">About</a>
+    <a href="#occasions" data-hi="अवसर">Occasions</a>
+    <a href="#menu" data-hi="मेन्यू">Menu</a>
+    <a href="#packages" data-hi="पैकेज">Packages</a>
+    <a href="#gallery" data-hi="झलकियाँ">Gallery</a>
+    <a href="#contact" data-hi="संपर्क">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">हिं</button>
+    <a href="#builder" class="btn btn-sm" data-hi="मेन्यू बनाएँ">Plan Menu</a>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow shloka">अन्नं ब्रह्मेति व्यजानात्</p>
+      <h1>
+        <span data-hi="गंगा किनारे से,">From the banks of Ganga,</span><br>
+        <em data-hi="शुद्ध स्वाद">pure taste</em>
+        <span data-hi="आपके हर उत्सव के लिए।">for every celebration.</span>
+      </h1>
+      <p class="lead" data-hi="हरिद्वार में शुद्ध शाकाहारी और सात्विक केटरिंग — शादी, भंडारा, पूजा, जन्मदिन और कॉर्पोरेट आयोजनों के लिए। देसी घी, ताज़ी सामग्री और घर जैसा प्रेम।">
+        Pure vegetarian &amp; sattvik catering in Haridwar — for weddings, bhandaras, pujas, birthdays and corporate events. Desi ghee, fresh ingredients, and the warmth of a home kitchen.
+      </p>
+      <div class="hero-cta">
+        <a href="#builder" class="btn" data-hi="अपना मेन्यू बनाएँ →">Build your menu →</a>
+        <a href="#" class="btn btn-ghost js-whatsapp" data-msg="Namaste! I'd like to enquire about catering." data-hi="व्हाट्सऐप पर बात करें">Chat on WhatsApp</a>
+      </div>
+      <ul class="hero-badges">
+        <li><span class="veg-mark"></span> <span data-hi="100% शुद्ध शाकाहारी">100% Pure Veg</span></li>
+        <li><span class="dot"></span> <span data-hi="बिना प्याज़-लहसुन विकल्प">No onion-garlic option</span></li>
+        <li><span class="dot"></span> <span data-hi="देसी घी में बना">Cooked in desi ghee</span></li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="plate">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=75" alt="A traditional Indian vegetarian thali">
+      </div>
+      <div class="float-card fc-1">
+        <strong class="count" data-target="500">0</strong><span>+</span>
+        <small data-hi="सफल आयोजन">events served</small>
+      </div>
+      <div class="float-card fc-2">
+        <strong class="count" data-target="150">0</strong><span>+</span>
+        <small data-hi="व्यंजन">dishes on menu</small>
+      </div>
+      <svg class="marigold m1" viewBox="0 0 100 100" aria-hidden="true"><use href="#marigold"/></svg>
+      <svg class="marigold m2" viewBox="0 0 100 100" aria-hidden="true"><use href="#marigold"/></svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z"/>
+  </svg>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-photos reveal">
+      <img class="ph ph-1" src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=700&q=70" alt="Freshly prepared Indian dishes" loading="lazy">
+      <img class="ph ph-2" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=70" alt="Crispy samosas" loading="lazy">
+      <div class="stamp"><span data-hi="हरिद्वार का">Haridwar's</span><b data-hi="अपना स्वाद">own taste</b></div>
+    </div>
+    <div class="about-copy reveal">
+      <p class="eyebrow" data-hi="हमारी कहानी">Our story</p>
+      <h2 data-hi="अन्न — क्योंकि भोजन प्रसाद है">Ann — because food is prasad</h2>
+      <p data-hi="संस्कृत में 'अन्न' का अर्थ है भोजन — वह जो जीवन को पोषित करता है। देवभूमि हरिद्वार में हम मानते हैं कि हर थाली प्रसाद है। इसीलिए हमारी रसोई में केवल शुद्ध शाकाहारी भोजन बनता है, साफ़-सफ़ाई और सात्विकता के साथ।">
+        In Sanskrit, <em>Ann</em> means food: what sustains life. In Devbhoomi Haridwar we believe every plate is prasad, so our kitchen cooks only pure vegetarian food, with care for cleanliness and sattvik values.
+      </p>
+      <p data-hi="पारंपरिक गढ़वाली और उत्तर भारतीय व्यंजनों से लेकर लाइव चाट काउंटर और आधुनिक फ्यूज़न तक — 50 मेहमानों की पूजा हो या 5000 का भंडारा, हम हर आयोजन को उसी लगन से सँवारते हैं।">
+        From traditional North Indian and Garhwali dishes to live chaat counters and modern fusion, we give every event the same care, whether it's a puja for 50 guests or a bhandara for 5,000.
+      </p>
+      <div class="stats">
+        <div><strong class="count" data-target="15">0</strong><span>+</span><small data-hi="वर्षों का अनुभव">years of experience</small></div>
+        <div><strong class="count" data-target="5000">0</strong><span>+</span><small data-hi="मेहमान एक आयोजन में">guests in one event</small></div>
+        <div><strong class="count" data-target="100">0</strong><span>%</span><small data-hi="शुद्ध शाकाहारी">pure vegetarian</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMISES ============ -->
+<section class="section promises">
+  <div class="container">
+    <div class="promise-grid">
+      <div class="promise reveal">
+        <div class="p-ico">🪔</div>
+        <h3 data-hi="सात्विक रसोई">Sattvik kitchen</h3>
+        <p data-hi="पूजा, व्रत और धार्मिक आयोजनों के लिए बिना प्याज़-लहसुन का पूरा मेन्यू।">A complete no onion-garlic menu for pujas, vrat and religious functions.</p>
+      </div>
+      <div class="promise reveal">
+        <div class="p-ico">🧈</div>
+        <h3 data-hi="शुद्ध देसी घी">Pure desi ghee</h3>
+        <p data-hi="मिठाइयाँ और पकवान शुद्ध घी में, ताज़ी मंडी की सब्ज़ियों के साथ।">Sweets and dishes made in pure ghee with fresh vegetables from the local mandi.</p>
+      </div>
+      <div class="promise reveal">
+        <div class="p-ico">🍽️</div>
+        <h3 data-hi="पूरी व्यवस्था">End-to-end service</h3>
+        <p data-hi="टेंट से लेकर सर्विंग स्टाफ, क्रॉकरी और लाइव काउंटर तक — सब हम सँभालते हैं।">Serving staff, crockery, buffet setup and live counters, all handled by us.</p>
+      </div>
+      <div class="promise reveal">
+        <div class="p-ico">🌿</div>
+        <h3 data-hi="स्वच्छता पहले">Hygiene first</h3>
+        <p data-hi="साफ़ रसोई, RO पानी, हेयरनेट-दस्ताने पहने स्टाफ़ — हर बार।">Clean kitchen, RO water, and staff in gloves and hairnets, every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OCCASIONS ============ -->
+<section class="section occasions" id="occasions">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="हम किनके लिए पकाते हैं">What we cater</p>
+      <h2 data-hi="हर अवसर, एक नया स्वाद">Every occasion, its own flavour</h2>
+    </div>
+    <div class="occ-grid" id="occGrid"></div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section menu" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="हमारा मेन्यू">Our menu</p>
+      <h2 data-hi="150+ व्यंजन, एक ही रसोई">150+ dishes, one kitchen</h2>
+      <p class="sub" data-hi="किसी भी व्यंजन पर ＋ दबाएँ और उसे अपने मेन्यू में जोड़ें।">Tap ＋ on any dish to add it to your custom menu.</p>
+    </div>
+
+    <div class="menu-tools reveal">
+      <div class="tabs" id="menuTabs" role="tablist"></div>
+      <div class="menu-filters">
+        <label class="switch">
+          <input type="checkbox" id="sattvikOnly">
+          <span class="slider"></span>
+          <span data-hi="केवल सात्विक (बिना प्याज़-लहसुन)">Sattvik only (no onion-garlic)</span>
+        </label>
+        <input type="search" id="menuSearch" class="search" placeholder="Search dishes… paneer, jalebi" data-hi-placeholder="व्यंजन खोजें… पनीर, जलेबी">
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+    <p class="empty" id="menuEmpty" hidden data-hi="कोई व्यंजन नहीं मिला। कुछ और खोजें!">No dishes found. Try something else!</p>
+  </div>
+</section>
+
+<!-- ============ MENU BUILDER ============ -->
+<section class="section builder" id="builder">
+  <div class="container builder-grid">
+    <div class="builder-copy reveal">
+      <p class="eyebrow light" data-hi="अपना मेन्यू बनाएँ">Plan your menu</p>
+      <h2 data-hi="अपनी थाली खुद सजाएँ">Design your own thali</h2>
+      <p data-hi="ऊपर के मेन्यू से व्यंजन चुनें, आयोजन की जानकारी भरें और एक क्लिक में व्हाट्सऐप पर कोटेशन माँगें। कोई फ़ॉर्म नहीं, कोई इंतज़ार नहीं।">
+        Pick dishes from the menu above, fill in your event details, and request a quote on WhatsApp in one tap. No forms, no waiting.
+      </p>
+      <div class="presets">
+        <span data-hi="या कोई तैयार मेन्यू लें:">Or start from a preset:</span>
+        <div class="preset-btns" id="presetBtns"></div>
+      </div>
+    </div>
+
+    <div class="ticket reveal" id="ticket">
+      <div class="ticket-head">
+        <span class="brand-mark sm">अन्न</span>
+        <span data-hi="आपका मेन्यू">Your menu</span>
+        <span class="pill" id="selCount">0</span>
+      </div>
+      <ul class="ticket-list" id="ticketList">
+        <li class="ticket-empty" data-hi="अभी कोई व्यंजन नहीं चुना गया। मेन्यू से ＋ दबाएँ।">No dishes yet. Tap ＋ in the menu.</li>
+      </ul>
+      <div class="ticket-form">
+        <label>
+          <span data-hi="अवसर">Occasion</span>
+          <select id="fEvent"></select>
+        </label>
+        <label>
+          <span data-hi="मेहमान">Guests</span>
+          <input type="number" id="fGuests" min="10" step="10" value="100">
+        </label>
+        <label>
+          <span data-hi="तारीख">Date</span>
+          <input type="date" id="fDate">
+        </label>
+        <label>
+          <span data-hi="स्थान">Venue / area</span>
+          <input type="text" id="fVenue" placeholder="e.g. Jwalapur, BHEL, Kankhal" data-hi-placeholder="जैसे ज्वालापुर, भेल, कनखल">
+        </label>
+        <label class="check">
+          <input type="checkbox" id="fSattvik">
+          <span data-hi="पूरा मेन्यू बिना प्याज़-लहसुन चाहिए">Whole menu without onion-garlic</span>
+        </label>
+      </div>
+      <div class="ticket-actions">
+        <button class="btn btn-wa" id="sendWa">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+          <span data-hi="व्हाट्सऐप पर कोटेशन माँगें">Get quote on WhatsApp</span>
+        </button>
+        <button class="btn btn-ghost dark" id="clearSel" data-hi="साफ़ करें">Clear</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="section packages" id="packages">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="पैकेज">Packages</p>
+      <h2 data-hi="हर बजट के लिए एक थाली">A thali for every budget</h2>
+      <p class="sub" data-hi="सभी पैकेज पूरी तरह बदले जा सकते हैं। कीमत मेहमानों की संख्या और मेन्यू पर निर्भर करती है।">Every package is fully customisable. Pricing depends on guest count and menu.</p>
+    </div>
+    <div class="pkg-grid" id="pkgGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SPECIALS ============ -->
+<section class="section specials">
+  <div class="container specials-inner reveal">
+    <div>
+      <p class="eyebrow light" data-hi="हरिद्वार विशेष">Haridwar specials</p>
+      <h2 data-hi="पर्व और यात्रा के लिए विशेष सेवा">Special service for festivals &amp; yatras</h2>
+      <p data-hi="कांवड़ यात्रा के भंडारे, कुंभ और अर्धकुंभ के शिविर, नवरात्रि व्रत थाली, गंगा दशहरा और श्राद्ध भोज — हज़ारों श्रद्धालुओं के लिए समय पर, शुद्ध भोजन।">
+        Kanwar Yatra bhandaras, Kumbh and Ardh Kumbh camps, Navratri vrat thalis, Ganga Dussehra and shraddh bhoj: pure food served on time to thousands of devotees.
+      </p>
+    </div>
+    <ul class="special-list">
+      <li data-hi="🔱 कांवड़ भंडारा">🔱 Kanwar bhandara</li>
+      <li data-hi="🪔 नवरात्रि व्रत थाली">🪔 Navratri vrat thali</li>
+      <li data-hi="🌊 गंगा दशहरा">🌊 Ganga Dussehra</li>
+      <li data-hi="🙏 श्राद्ध / ब्राह्मण भोज">🙏 Shraddh / Brahmin bhoj</li>
+      <li data-hi="⛺ कुंभ शिविर">⛺ Kumbh camps</li>
+      <li data-hi="🏨 धर्मशाला व आश्रम">🏨 Dharamshalas &amp; ashrams</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="झलकियाँ">Gallery</p>
+      <h2 data-hi="हमारी रसोई से">From our kitchen</h2>
+    </div>
+    <div class="gal-grid" id="galGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="कैसे काम करते हैं">How it works</p>
+      <h2 data-hi="चार आसान कदम">Four simple steps</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><b>01</b><h3 data-hi="संपर्क करें">Reach out</h3><p data-hi="कॉल, व्हाट्सऐप या ऊपर के मेन्यू बिल्डर से।">Call, WhatsApp, or use the menu builder.</p></li>
+      <li class="reveal"><b>02</b><h3 data-hi="चखें">Taste</h3><p data-hi="बड़े आयोजनों के लिए मुफ़्त टेस्टिंग सेशन।">Free tasting session for large events.</p></li>
+      <li class="reveal"><b>03</b><h3 data-hi="तय करें">Finalise</h3><p data-hi="मेन्यू, मेहमान और बजट तय करके बुकिंग।">Lock in menu, guest count and budget.</p></li>
+      <li class="reveal"><b>04</b><h3 data-hi="आनंद लें">Celebrate</h3><p data-hi="बाकी सब हम पर छोड़ दें।">Leave the rest to us.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="मेहमानों की बात">Kind words</p>
+      <h2 data-hi="मेहमानों ने क्या कहा">What our hosts say</h2>
+    </div>
+    <div class="t-slider reveal" id="tSlider">
+      <div class="t-track" id="tTrack"></div>
+      <div class="t-dots" id="tDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-hi="सवाल-जवाब">FAQ</p>
+      <h2 data-hi="अक्सर पूछे जाने वाले सवाल">Frequently asked</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-card reveal">
+      <p class="eyebrow light" data-hi="संपर्क">Contact</p>
+      <h2 data-hi="आइए, साथ मिलकर उत्सव सजाएँ">Let's plan your celebration</h2>
+      <ul class="contact-list">
+        <li><span>📞</span> <a href="#" class="js-phone" id="phoneText"></a></li>
+        <li><span>💬</span> <a href="#" class="js-whatsapp" data-msg="Namaste! I'd like to enquire about catering." data-hi="व्हाट्सऐप पर संदेश भेजें">Message on WhatsApp</a></li>
+        <li><span>✉️</span> <a href="#" id="emailText"></a></li>
+        <li><span>📍</span> <span id="addrText"></span></li>
+        <li><span>🕘</span> <span data-hi="रोज़ सुबह 9 से रात 9 बजे तक">Open daily, 9 AM to 9 PM</span></li>
+      </ul>
+      <p class="areas"><b data-hi="सेवा क्षेत्र:">We serve:</b> <span data-hi="हरिद्वार, कनखल, ज्वालापुर, भेल, रानीपुर, SIDCUL, ऋषिकेश, रुड़की और आसपास।">Haridwar, Kankhal, Jwalapur, BHEL, Ranipur, SIDCUL, Rishikesh, Roorkee &amp; nearby.</span></p>
+    </div>
+    <div class="map reveal">
+      <iframe title="Ann Caterers location on map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapFrame"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <span class="brand-mark">अन्न</span>
+      <p class="shloka small">अन्नं ब्रह्म · Food is divine</p>
+    </div>
+    <p class="copy">© <span id="year"></span> <span data-hi="अन्न केटरर्स, हरिद्वार। सर्वाधिकार सुरक्षित।">Ann Caterers, Haridwar. All rights reserved.</span></p>
+  </div>
+</footer>
+
+<!-- Floating actions -->
+<div class="fab">
+  <a href="#" class="fab-btn call js-phone" aria-label="Call us">📞</a>
+  <a href="#" class="fab-btn wa js-whatsapp" data-msg="Namaste! I'd like to enquire about catering." aria-label="WhatsApp us">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+  </a>
+</div>
+
+<!-- Floating "menu count" chip -->
+<a href="#builder" class="sel-chip" id="selChip" hidden>
+  🍽️ <span id="selChipCount">0</span> <span data-hi="व्यंजन चुने">dishes picked</span> →
+</a>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="marigold" viewBox="0 0 100 100">
+    <g fill="#f4a300">
+      <circle cx="50" cy="50" r="18"/>
+      <g id="pet"><ellipse cx="50" cy="20" rx="10" ry="18"/></g>
+      <use href="#pet" transform="rotate(30 50 50)"/><use href="#pet" transform="rotate(60 50 50)"/>
+      <use href="#pet" transform="rotate(90 50 50)"/><use href="#pet" transform="rotate(120 50 50)"/>
+      <use href="#pet" transform="rotate(150 50 50)"/><use href="#pet" transform="rotate(180 50 50)"/>
+      <use href="#pet" transform="rotate(210 50 50)"/><use href="#pet" transform="rotate(240 50 50)"/>
+      <use href="#pet" transform="rotate(270 50 50)"/><use href="#pet" transform="rotate(300 50 50)"/>
+      <use href="#pet" transform="rotate(330 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="12" fill="#e06a00"/>
+  </symbol>
+</svg>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
