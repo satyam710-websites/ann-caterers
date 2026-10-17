@@ -6,22 +6,22 @@
 
 const SITE = {
   // ⚠️ REPLACE with the client's real details before going live
-  phones: ["+91-7906105183", "+91-9997884749"],  // shown on site; the first is used for the floating "Call" button
-  whatsapp: "917906105183",          // country code + number, digits only
+  phones: ["+91-9997884749", "+91-7906105183"],  // shown on site; the first is used for the floating "Call" button
+  whatsapp: "919997884749",          // country code + number, digits only
   email: "hello@anncaterers.in",
   address: "Haridwar, Uttarakhand 249401",
 };
 
 /* Occasions ----------------------------------------------------------- */
 const OCCASIONS = [
-  { icon: "💍", name: "Weddings", desc: "Sangeet, haldi, baraat swagat and the grand reception." },
-  { icon: "🥂", name: "Receptions & Parties", desc: "Anniversaries, engagements and get-togethers." },
-  { icon: "🎂", name: "Birthdays", desc: "Kids' favourites, chaat counters and fun live stations." },
-  { icon: "🏢", name: "Corporate", desc: "Meetings, SIDCUL and BHEL events, office lunches." },
-  { icon: "🏠", name: "Griha Pravesh", desc: "Bless your new home with a warm family feast." },
-  { icon: "🪔", name: "Puja & Religious", desc: "Pure veg menus, with no onion-garlic food on request." },
-  { icon: "🔱", name: "Bhandara", desc: "Large-scale veg bhandaras for hundreds to thousands." },
-  { icon: "👶", name: "Mundan & Naamkaran", desc: "Traditional ceremonies, made special by family and food." },
+  { icon: "💍", name: "Weddings", desc: "From the sangeet to the reception, every function covered." },
+  { icon: "🥂", name: "Engagements & Receptions", desc: "Elegant spreads for your biggest evenings." },
+  { icon: "🏢", name: "Corporate Events", desc: "Conferences, launches, annual days and office lunches." },
+  { icon: "🎂", name: "Birthdays & Anniversaries", desc: "Celebrations with live counters and crowd favourites." },
+  { icon: "🍷", name: "Private Parties", desc: "Cocktail evenings, kitty parties and house parties." },
+  { icon: "🏡", name: "Housewarming", desc: "A warm, generous meal for family and friends." },
+  { icon: "🏔️", name: "Destination Weddings", desc: "Haridwar, Rishikesh and nearby resorts." },
+  { icon: "🍽️", name: "Private Dinners", desc: "Intimate, plated dining for small groups." },
 ];
 
 /* Menu ----------------------------------------------------------------
@@ -145,9 +145,7 @@ const FAQS = [
   { q: "Can we mix veg and non-veg at the same event?",
     a: "Yes. Most of our weddings and parties have both, with separate counters and separate serving for veg and non-veg dishes." },
   { q: "What is the minimum number of guests?",
-    a: "We cater events from 30 guests up to several thousand. Smaller home functions can also be arranged on request." },
-  { q: "Do you make food without onion and garlic?",
-    a: "Yes. For pujas and religious functions we prepare pure veg food without onion and garlic on request." },
+    a: "We cater events from 30 guests up to several thousand. Smaller private dinners can also be arranged on request." },
   { q: "How early should we book?",
     a: "For weddings, 1–2 months ahead is ideal, especially during the wedding season. Smaller events can usually be booked a week in advance." },
   { q: "Do you provide serving staff, crockery and setup?",
