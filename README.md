@@ -1,13 +1,13 @@
 # अन्न · Ann Caterers — Haridwar
 
-Static, bilingual (Hindi / English) website for a pure-veg caterer in Haridwar. No build step: plain HTML, CSS and JS, ready for GitHub Pages.
+Static website for a veg & non-veg caterer in Haridwar. No build step: plain HTML, CSS and JS, ready for GitHub Pages.
 
 ## Structure
 ```
 index.html        page layout
 css/style.css     all styling
 js/data.js        ← EDIT THIS: phone, WhatsApp, address, menu, packages, FAQ, gallery, reviews
-js/main.js        behaviour (language toggle, menu builder, sliders)
+js/main.js        behaviour (veg/non-veg menu toggle, quote form, sliders)
 images/           put the client's real photos here
 ```
 
@@ -16,7 +16,8 @@ images/           put the client's real photos here
 - [ ] `js/data.js` → `TESTIMONIALS`: replace the sample reviews with real customer reviews
 - [ ] `index.html` → stats (`data-target="500"`, `15` years, etc.): set the client's real numbers
 - [ ] `js/data.js` → `GALLERY`: swap the stock photos for real event photos (`images/xyz.jpg`)
-- [ ] Review the menu items and packages with the client
+- [ ] `js/data.js` → `PACKAGES`: confirm Gold & Platinum inclusions (placeholders) and what "3ff" means in Silver
+- [ ] Review the veg & non-veg menu items with the client
 
 ## Run locally
 ```
