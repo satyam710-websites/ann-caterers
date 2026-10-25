@@ -1,13 +1,14 @@
 /* =========================================================
-   अन्न · Ann Caterers — SITE DATA
-   Edit this file to update business details, menu, packages etc.
+   अन्न · Ann Caters & Events — SITE DATA
+   Edit this file to update business details, menu, FAQ etc.
+   (The three platter menus live in js/platters.js.)
    No coding knowledge needed: just change the text in quotes.
    ========================================================= */
 
 const SITE = {
   // ⚠️ REPLACE with the client's real details before going live
   phones: ["+91-9997884749", "+91-7906105183"],  // shown on site; the first is used for the floating "Call" button
-  whatsapp: "919997884749",          // country code + number, digits only
+  whatsapp: ["919997884749", "917906105183"],    // country code + number, digits only; the first is used for all WhatsApp buttons
   email: "hello@anncaterers.in",
   address: "Haridwar, Uttarakhand 249401",
 };
@@ -21,7 +22,7 @@ const OCCASIONS = [
   { icon: "🍷", name: "Private Parties", desc: "Cocktail evenings, kitty parties and house parties." },
   { icon: "🏡", name: "Housewarming", desc: "A warm, generous meal for family and friends." },
   { icon: "🏔️", name: "Destination Weddings", desc: "Haridwar, Rishikesh and nearby resorts." },
-  { icon: "🍽️", name: "Private Dinners", desc: "Intimate, plated dining for small groups." },
+  { icon: "🍽️", name: "Get Together", desc: "Relaxed gatherings with family and friends." },
 ];
 
 /* Menu ----------------------------------------------------------------
@@ -86,39 +87,6 @@ const NONVEG_MENU = [
   ]},
 ];
 
-/* Packages — price per plate -----------------------------------------
-   ⚠️ Silver is from the client's notes. Gold & Platinum inclusions are
-   PLACEHOLDERS — confirm with the client and edit the lists below.
------------------------------------------------------------------------- */
-const PACKAGES = [
-  { name: "Silver", veg: 800, nonveg: 1000,
-    feats: [
-      "1 welcome drink + 3 beverages",
-      "2 starters",
-      "3 fast food items",
-      "Dal & paneer (any style)",
-      "2 breads, steamed rice & jeera rice",
-      "Traditional sweets (your choice)",
-      "Ice cream (any flavour)",
-    ] },
-  { name: "Gold", veg: 1500, nonveg: 1800, featured: true,
-    feats: [
-      "Everything in Silver",
-      "4 starters",
-      "Live chaat counter",
-      "Extra main course dishes",
-      "Choice of 3 sweets",
-    ] },
-  { name: "Platinum", veg: 2000, nonveg: 2200,
-    feats: [
-      "Everything in Gold",
-      "6 starters",
-      "Mutton dishes (non-veg)",
-      "Multiple live counters",
-      "Premium crockery & décor",
-    ] },
-];
-
 /* Gallery (veg food only — replace with the client's real event photos in /images) */
 const GALLERY = [
   { src: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=70", alt: "North Indian curry spread", cls: "tall" },
@@ -133,19 +101,19 @@ const GALLERY = [
 
 /* Testimonials — ⚠️ SAMPLE TEXT. Replace with the client's real customer reviews before going live. */
 const TESTIMONIALS = [
-  { text: "Everyone at my daughter's wedding praised the food, especially the butter chicken and the hot jalebi-rabri. Service was smooth even with 800 guests.", who: "Sample review · Wedding, Jwalapur" },
-  { text: "We had a separate veg and non-veg spread for our reception and both were excellent. Very professional team.", who: "Sample review · Reception, Kankhal" },
+  { text: "Everyone at our wedding praised the food, especially the live counters and the hot jalebi-rabri. Service was smooth even with 800 guests.", who: "Sample review · Wedding" },
+  { text: "Our reception menu was excellent, from the butler-passed snacks to the desserts. A very professional team.", who: "Sample review · Reception" },
   { text: "Booked them for our SIDCUL office annual day. The live counters were a big hit with the team.", who: "Sample review · Corporate, SIDCUL" },
 ];
 
 /* FAQ ----------------------------------------------------------------- */
 const FAQS = [
-  { q: "What do the package prices include?",
-    a: "Package prices are per plate. Each package has a veg price and a non-veg price; the non-veg plate includes chicken dishes. The final quote depends on guest count, venue and any changes to the menu." },
-  { q: "Can we mix veg and non-veg at the same event?",
-    a: "Yes. Most of our weddings and parties have both, with separate counters and separate serving for veg and non-veg dishes." },
+  { q: "What's included in each platter?",
+    a: "Each platter is a complete set menu, from welcome drinks to desserts. You can view the full menu on this website or download it as a PDF, and any dish can be swapped to suit your event. Contact us for a quote." },
+  { q: "Do you serve non-vegetarian food?",
+    a: "Yes, we offer a chicken and mutton menu, prepared and served separately from the veg food. As per local regulations, non-vegetarian food is not served within Haridwar’s municipal limits and restricted zones. It is available only at venues where it is legally permitted, so please share your venue with us and we’ll confirm." },
   { q: "What is the minimum number of guests?",
-    a: "We cater events from 30 guests up to several thousand. Smaller private dinners can also be arranged on request." },
+    a: "We cater events from 30 guests up to several thousand. Smaller get-togethers can also be arranged on request." },
   { q: "How early should we book?",
     a: "For weddings, 1–2 months ahead is ideal, especially during the wedding season. Smaller events can usually be booked a week in advance." },
   { q: "Do you provide serving staff, crockery and setup?",

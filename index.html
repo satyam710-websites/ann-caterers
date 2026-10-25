@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>अन्न · Ann Caterers — Veg &amp; Non-Veg Catering in Haridwar</title>
-  <meta name="description" content="अन्न (Ann) Caterers: premium veg and non-veg catering in Haridwar for weddings, receptions, private parties and corporate events. Silver, Gold and Platinum packages.">
+  <title>अन्न · Ann Caters &amp; Events — Premium Catering in Haridwar</title>
+  <meta name="description" content="अन्न (Ann) Caters &amp; Events: premium catering in Haridwar for weddings, receptions, private parties and corporate events. Silver, Golden and Platinum platters.">
   <meta name="theme-color" content="#7a1f1f">
-  <meta property="og:title" content="अन्न · Ann Caterers, Haridwar">
+  <meta property="og:title" content="अन्न · Ann Caters &amp; Events, Haridwar">
+  <meta property="og:image" content="images/logo-full.jpg">
   <meta property="og:description" content="Premium veg & non-veg catering in Haridwar. Weddings, private parties and corporate events.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -19,15 +20,14 @@
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
-  <a href="#top" class="brand" aria-label="Ann Caterers home">
-    <span class="brand-mark">अन्न</span>
-    <span class="brand-sub">Caterers · Haridwar</span>
+  <a href="#top" class="brand" aria-label="Ann Caters &amp; Events home">
+    <img class="brand-logo" src="images/logo-wordmark.png" alt="अन्न Caters &amp; Events">
   </a>
   <nav class="nav-links" id="navLinks">
     <a href="#about">About</a>
     <a href="#occasions">Occasions</a>
     <a href="#menu">Menu</a>
-    <a href="#packages">Packages</a>
+    <a href="#packages">Platters</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -44,16 +44,16 @@
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">Catering in Haridwar</p>
+      <p class="eyebrow">Caters &amp; Events · Haridwar</p>
       <h1>
-        Great food for<br>
-        <em>every celebration</em>
+        Good food.<br>
+        <em>Great moments.</em>
       </h1>
       <p class="lead">
         Premium veg and non-veg catering for weddings, private parties and corporate events. Exceptional food, polished service, every detail handled.
       </p>
       <div class="hero-cta">
-        <a href="#packages" class="btn">View packages →</a>
+        <a href="#packages" class="btn">View platters →</a>
         <a href="#" class="btn btn-ghost js-whatsapp" data-msg="Hello! I'd like to enquire about catering.">Chat on WhatsApp</a>
       </div>
       <ul class="hero-badges">
@@ -63,8 +63,8 @@
       </ul>
     </div>
     <div class="hero-art">
-      <div class="plate">
-        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=75" alt="Bowls of Indian curry with rice">
+      <div class="logo-card">
+        <img src="images/logo-full.jpg" alt="Ann Caters &amp; Events logo: an elegant banquet table under chandeliers">
       </div>
       <div class="float-card fc-1">
         <strong class="count" data-target="500">0</strong><span>+</span>
@@ -157,9 +157,9 @@
 <section class="section packages" id="packages">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Packages</p>
-      <h2>Choose your package</h2>
-      <p class="sub">Prices are per plate. Every package can be customised to suit your event.</p>
+      <p class="eyebrow">Platters</p>
+      <h2>Choose your platter</h2>
+      <p class="sub">Three complete set menus. View the full menu online or download it as a PDF, and customise anything you like.</p>
     </div>
     <div class="pkg-grid" id="pkgGrid"></div>
   </div>
@@ -183,7 +183,10 @@
       <input type="search" id="menuSearch" class="search" placeholder="Search dishes… paneer, biryani">
     </div>
 
-    <p class="nv-note" id="nvNote" hidden>Our non-veg menu features chicken and mutton dishes, cooked and served separately from the veg food.</p>
+    <div class="notice reveal" role="note">
+      <span class="notice-ico">ⓘ</span>
+      <p><b>Non-vegetarian catering</b>As per local regulations, non-vegetarian food is not prepared, served or delivered within Haridwar’s municipal limits and restricted zones. Non-veg catering is available only at venues where it is legally permitted. Please share your venue at the time of booking.</p>
+    </div>
     <div class="menu-grid" id="menuGrid"></div>
     <p class="empty" id="menuEmpty" hidden>No dishes found. Try something else!</p>
   </div>
@@ -276,8 +279,12 @@
       </label>
       <label>
         <span>Venue / area</span>
-        <input type="text" id="fVenue" placeholder="e.g. Jwalapur, BHEL, Kankhal">
+        <input type="text" id="fVenue" placeholder="Venue name and area">
       </label>
+      <div class="notice" id="fNvNotice" hidden>
+        <span class="notice-ico">ⓘ</span>
+        <p>As per local regulations, non-vegetarian food is not prepared, served or delivered within Haridwar’s municipal limits and restricted zones. Non-veg catering is available only at venues where it is legally permitted. Please share your venue at the time of booking.</p>
+      </div>
       <button type="submit" class="btn btn-wa">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
         Send on WhatsApp
@@ -292,11 +299,12 @@
     <div class="contact-intro reveal">
       <p class="eyebrow light">Contact</p>
       <h2>Let's plan your celebration</h2>
-      <p class="areas"><b>We serve:</b> Haridwar, Kankhal, Jwalapur, BHEL, Ranipur, SIDCUL, Rishikesh, Roorkee &amp; nearby.</p>
+      <p class="areas"><b>We serve:</b> Haridwar, Rishikesh, Roorkee, Dehradun &amp; nearby.</p>
       <a href="#" class="btn btn-wa js-whatsapp" data-msg="Hello! I'd like to enquire about catering.">Message us on WhatsApp</a>
     </div>
     <ul class="contact-list reveal">
-      <li><span>📞</span> <span id="phoneText"></span></li>
+      <li><span>📞</span> <span><small class="c-label">Call</small><span id="phoneText"></span></span></li>
+      <li><span>💬</span> <span><small class="c-label">WhatsApp</small><span id="waText"></span></span></li>
       <li><span>✉️</span> <a href="#" id="emailText"></a></li>
       <li><span>📍</span> <span id="addrText"></span></li>
       <li><span>🕘</span> <span>Open daily, 9 AM to 9 PM</span></li>
@@ -310,13 +318,13 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div>
-      <span class="brand-mark">अन्न</span>
-      <p class="tagline">Caterers · Haridwar</p>
+      <img class="footer-logo" src="images/logo-wordmark-light.png" alt="अन्न Caters &amp; Events">
     </div>
     <div class="footer-right">
       <nav class="footer-links"><a href="privacy.html">Privacy Policy</a></nav>
-      <p class="copy">© <span id="year"></span> Ann Caterers, Haridwar. All rights reserved.</p>
+      <p class="copy">© <span id="year"></span> Ann Caters &amp; Events, Haridwar. All rights reserved.</p>
     </div>
+    <p class="footer-note">Non-vegetarian food is served only at venues where it is legally permitted, in line with Haridwar’s local regulations.</p>
   </div>
 </footer>
 
@@ -346,6 +354,7 @@
 </svg>
 
 <script src="js/data.js"></script>
+<script src="js/platters.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

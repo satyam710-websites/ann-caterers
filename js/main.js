@@ -1,15 +1,14 @@
-/* अन्न · Ann Caterers — site behaviour */
+/* अन्न · Ann Caters & Events — site behaviour */
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-  const inr = (n) => "₹" + n.toLocaleString("en-IN");
 
   let diet = "veg";
   let activeCat = "all";
   const currentMenu = () => (diet === "veg" ? VEG_MENU : NONVEG_MENU);
 
   /* ---------- Contact details from SITE ---------- */
-  const waLink = (msg) => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+  const waLink = (msg, num = SITE.whatsapp[0]) => `https://wa.me/${num}?text=${encodeURIComponent(msg)}`;
   function wireContacts() {
     $$(".js-whatsapp").forEach((a) => {
       a.href = waLink(a.dataset.msg || "Hello!");
@@ -18,6 +17,8 @@
     const tel = (p) => `tel:${p.replace(/[^\d+]/g, "")}`;
     $$(".js-phone").forEach((a) => (a.href = tel(SITE.phones[0])));
     $("#phoneText").innerHTML = SITE.phones.map((p) => `<a href="${tel(p)}">${p}</a>`).join("<br>");
+    $("#waText").innerHTML = SITE.whatsapp.map((n) =>
+      `<a href="${waLink("Hello! I'd like to enquire about catering.", n)}" target="_blank" rel="noopener">+${n.slice(0, 2)}-${n.slice(2)}</a>`).join("<br>");
     $("#emailText").textContent = SITE.email;
     $("#emailText").href = `mailto:${SITE.email}`;
     $("#addrText").textContent = SITE.address;
@@ -26,7 +27,7 @@
 
   /* ---------- Renderers ---------- */
   function renderMarquee() {
-    const words = OCCASIONS.map((o) => o.name).concat(["Live Counters", "Butter Chicken", "Hot Jalebi", "Mutton Biryani"]);
+    const words = OCCASIONS.map((o) => o.name).concat(["Live Counters", "Mocktail Bar", "Pasta Station", "Hot Jalebi"]);
     const html = words.map((w) => `<span>${w}</span><i>✦</i>`).join("");
     $("#marqueeTrack").innerHTML = html + html;
   }
@@ -41,18 +42,19 @@
   }
 
   function renderPackages() {
-    $("#pkgGrid").innerHTML = PACKAGES.map((p) => `
+    $("#pkgGrid").innerHTML = PLATTERS.map((p) => `
       <article class="pkg reveal ${p.featured ? "featured" : ""}">
         ${p.featured ? `<span class="pkg-tag">Most popular</span>` : ""}
-        <h3>${p.name}</h3>
-        <div class="prices">
-          <div><span class="veg-mark"></span><small>Veg</small><strong>${inr(p.veg)}</strong></div>
-          <div><span class="nonveg-mark"></span><small>Non-veg</small><strong>${inr(p.nonveg)}</strong></div>
+        <h3><small>The</small>${p.short} Platter</h3>
+        <p class="pkg-intro">${p.intro}</p>
+        <ul>${p.highlights.map((f) => `<li>${f}</li>`).join("")}</ul>
+        <div class="pkg-actions">
+          <a class="btn ${p.featured ? "" : "btn-ghost dark"}" href="platter.html?p=${p.id}">View full menu</a>
+          <div class="pkg-links">
+            <a href="menus/ann-${p.id}-platter.pdf" download>Download PDF</a>
+            <a href="${waLink(`Hello! I'm interested in ${p.name}. Please share more details.`)}" target="_blank" rel="noopener">Enquire</a>
+          </div>
         </div>
-        <p class="per">per plate</p>
-        <ul>${p.feats.map((f) => `<li>${f}</li>`).join("")}</ul>
-        <a class="btn ${p.featured ? "" : "btn-ghost dark"}" target="_blank" rel="noopener"
-           href="${waLink(`Hello! I'm interested in the ${p.name} package. Please share more details.`)}">Enquire</a>
       </article>`).join("");
   }
 
@@ -82,7 +84,6 @@
     });
     $("#menuGrid").innerHTML = html;
     $("#menuEmpty").hidden = n > 0;
-    $("#nvNote").hidden = diet !== "nonveg";
   }
 
   function renderGallery() {
@@ -114,13 +115,13 @@
 
   function renderQuoteForm() {
     $("#fEvent").innerHTML = OCCASIONS.map((o) => `<option>${o.name}</option>`).join("") + `<option>Other</option>`;
-    $("#fPackage").innerHTML = PACKAGES.map((p) => `<option>${p.name}</option>`).join("") + `<option>Not sure yet</option>`;
-    $("#fPackage").value = (PACKAGES.find((p) => p.featured) || PACKAGES[0]).name;
+    $("#fPackage").innerHTML = PLATTERS.map((p) => `<option>${p.short} Platter</option>`).join("") + `<option>Custom menu</option><option>Not sure yet</option>`;
+    $("#fPackage").value = (PLATTERS.find((p) => p.featured) || PLATTERS[0]).short + " Platter";
     $("#fDate").min = new Date().toISOString().split("T")[0];
   }
 
   function quoteMessage() {
-    const lines = ["Hello Ann Caterers!", "", "I'd like a quote for:"];
+    const lines = ["Hello Ann Caters & Events!", "", "I'd like a quote for:"];
     lines.push(`• Occasion: ${$("#fEvent").value}`);
     lines.push(`• Guests: ${$("#fGuests").value || "-"}`);
     lines.push(`• Package: ${$("#fPackage").value}`);
@@ -162,6 +163,7 @@
     });
     $("#menuSearch").addEventListener("input", renderMenu);
     $("#tDots").addEventListener("click", (e) => { const b = e.target.closest("[data-t]"); if (b) goT(+b.dataset.t); });
+    $("#fDiet").addEventListener("change", () => { $("#fNvNotice").hidden = $("#fDiet").value !== "Veg + Non-veg"; });
     $("#quoteForm").addEventListener("submit", (e) => {
       e.preventDefault();
       window.open(waLink(quoteMessage()), "_blank", "noopener");
